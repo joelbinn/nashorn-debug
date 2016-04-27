@@ -3,4 +3,4 @@
 function hello(name) {
   var s = 'Hello ';
   return s + name;
-}
+};
