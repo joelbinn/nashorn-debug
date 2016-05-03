@@ -18,7 +18,7 @@ object NashornDemo extends App {
   private val result = invocable.invokeFunction("hello", "Nashorn")
   println(s"result=$result")
 
-  private val result2 = invocable.invokeFunction("summary", new Input(List("kaka","banan")))
+  private val result2 = invocable.invokeFunction("summary", new Input(List("kaka","banan"), 42))
   println(s"result=$result2")
 
   val s = this.getClass.getResourceAsStream("/joelabs/nashorn/Hello.js")
